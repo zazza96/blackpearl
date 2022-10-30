@@ -1,0 +1,78 @@
+.nhsuk-fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+legend.nhsuk-label--l {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.47368;
+}
+
+.nhsuk-fieldset__legend {
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    box-sizing: border-box;
+    display: table;
+    margin-bottom: 8px;
+    margin-top: 0;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+.nhsuk-hint {
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.nhsuk-fieldset__heading {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+.nhsuk-date-input__item {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 24px;
+}
+.nhsuk-label {
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.nhsuk-input {
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 2px solid $hint-gray;
+    border-radius: 0;
+    box-sizing: border-box;
+    height: 40px;
+    margin-top: 0;
+    padding: 4px;
+    width: 100%;
+}
+.nhsuk-form-group .nhsuk-form-group:last-of-type {
+    margin-bottom: 0;
+}
+.nhsuk-input--width-2 {
+    max-width: 5.4ex;
+}
+.nhsuk-input--width-4 {
+    max-width: 9ex;
+}
+

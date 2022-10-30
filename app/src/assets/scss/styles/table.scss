@@ -1,0 +1,33 @@
+table.resultTable {
+  width: 100%;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: $nhsblue;
+  border-style: solid;
+  color: white;
+  td, th {
+    border-width: 2px;
+    border-color: $nhsblue;
+    border-style: solid;
+    padding: 3px;
+  }
+  th {
+    cursor: default;
+  }
+  thead {
+    background-color: $nhsblue;
+  }
+  tbody {
+    color: black;
+  }
+  .row.selected {
+    color: white;
+    background-color: $nhsblue;
+  }
+  tr {
+    cursor: pointer;
+  }
+}
+#resultsArea {
+  padding: 15px 16px;
+}

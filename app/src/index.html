@@ -1,0 +1,102 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Pearl</title>
+</head>
+
+<body>
+    <div id="formFields">
+        <form>
+            <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="nhs_number">
+                    Patient's NHS number
+                </label>
+                <input class="nhsuk-input" id="nhs-number_txtbox" name="nhs-number" type="text">
+            </div>
+            <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="family">
+                    Family name
+                </label>
+                <input class="nhsuk-input" id="family_txtbox" name="family" type="text">
+            </div>
+            <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="given-name">
+                    Given name
+                </label>
+                <input class="nhsuk-input" id="givenname_txtbox" name="given-name" type="text">
+            </div>
+            <div class="nhsuk-form-group">
+                <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+                    <legend class="nhsuk-fieldset__legend nhsuk-label--l">
+                        <h1 class="nhsuk-fieldset__heading">
+                            Date of birth?
+                        </h1>
+                    </legend>
+                    <div class="nhsuk-hint" id="example-hint">
+                        For example, 15 3 1984
+                    </div>
+    
+                    <div class="nhsuk-date-input" id="example">
+                        <div class="nhsuk-date-input__item">
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-label nhsuk-date-input__label" for="birth-day">
+                                    Day
+                                </label>
+                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="birth-day"
+                                    name="birth-day" type="text" pattern="[0-9]*" inputmode="numeric">
+                            </div>
+                        </div>
+                        <div class="nhsuk-date-input__item">
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-label nhsuk-date-input__label" for="birth-month">
+                                    Month
+                                </label>
+                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="birth-month"
+                                    name="birth-month" type="text" pattern="[0-9]*" inputmode="numeric">
+                            </div>
+                        </div>
+                        <div class="nhsuk-date-input__item">
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-label nhsuk-date-input__label" for="birth-year">
+                                    Year
+                                </label>
+                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="birth-year"
+                                    name="birth-year" type="text" pattern="[0-9]*" inputmode="numeric">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <button id="search_btn" class="nhsuk-button" type="submit">
+                Search
+            </button>
+        </form>
+        <label for="patinets">List of patients: </label>
+        <select name="patients" id="patients_dropdown">
+            <option value="" disabled selected>Select your option</option>
+        </select>
+        
+    </div>
+    <div id="resultsArea">
+        <table class="resultTable">
+            <thead>
+                <tr>
+                    <th>NHS Number</th>
+                    <th>Family Name</th>
+                    <th>Given Name</th>
+                    <th>Birth date</th>
+                    <th>Address</th>
+                    <th>Postal Code</th>
+                </tr>
+            </thead>
+            <tbody id="patientResult">
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
